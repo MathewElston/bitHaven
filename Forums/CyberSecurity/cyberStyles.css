@@ -1,0 +1,24 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+.mainContainer > * {
+    justify-content: space-between;
+}
+.topThreads {
+    width: fit-content;
+    height: fit-content;
+
+}
+a {
+    color: rgb(0,200,145);
+    text-decoration: none;
+}
+a:hover {
+    color:rgb(220, 20, 120, 0.5);
+}
+.topThreads >* {
+    padding: 1em;
+    border: solid 2px white;
+}

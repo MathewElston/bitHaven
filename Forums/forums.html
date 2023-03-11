@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forums</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../styles.css" rel="stylesheet">
+        <link href="forums.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../Home/home.html">.home()</a>
+            <a href="../Classwork/classwork.html" >.classwork()</a>
+            <a href="../Resource/resource.html">.resources()</a>
+            <a href="../News/news.html">.news()</a>
+            <a href="../Forums/forums.html">.forums()</a>
+            <a href="../About/about.html">.about()</a>
+            <a href="../Contact/contact.html">.contact()</a>
+        </div>
+        <span onclick="openNav()" id="navButton">&#9776;</span>
+        <h1>Forums</h1>
+        <div class="mainContainer">
+            <div class="topics" id="AITopic">
+                <img src="AI_Icon.png" alt="AI icon">
+                <a href="#">Aritifical Intelligence</a>
+                <div class="topicDesc" id="AIDescription"> Join the conversation about the latest developments in artificial intelligence, including machine learning, neural networks, and natural language processing. Discuss how AI is changing the landscape of technology and what the future holds for this exciting field.</div>
+            </div>
+            <div class="topics" id="cyberSecurityTopic">
+                <img src="CyberSecurityIcon.png" alt="Cyber Security Icon">
+                <a href="CyberSecurity/CyberSecurity.html">Cyber Security</a>
+                <div class="topicDesc" id="cyberSecurityDesc">Share your insights and learn from others about the latest cybersecurity threats and best practices for protecting your online presence. Topics may include data breaches, phishing attacks, password management, and network security.</div>
+            </div>
+            <div class="topics" id="softwareTopic">
+                <img src="SoftwareDevIcon.png" alt="Software Development Icon">
+                <a href="#">Software Development</a>
+                <div class="topicDesc">Connect with other software developers to share your tips and tricks for building high-quality software. Discuss best practices for software design, development methodologies, testing and deployment, and tools and technologies. Whether you're a seasoned developer or just starting out, this forum is for you.</div>
+            </div>
+        </div>
+    <script src="../main.js"></script>
+    </body>
+</html>

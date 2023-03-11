@@ -1,0 +1,12 @@
+h1 {
+    margin-left: 40%;
+}
+.accountContainer {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    margin-left:  40%;
+}
+.accountContainer > label,input {
+    display: flex;
+}

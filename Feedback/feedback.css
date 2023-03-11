@@ -1,0 +1,19 @@
+h1 {
+    margin-left: 40%;
+}
+fieldset {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    margin-left:  40%;
+}
+.checkboxContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.boxItems {
+    display: flex;
+    justify-content: space-between;
+}

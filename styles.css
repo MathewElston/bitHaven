@@ -1,0 +1,88 @@
+body {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  transition: margin-left 1s;
+  margin-left: 0;
+  padding: 20px;
+}
+
+body {
+  background-color: #1E1E1E;
+}
+
+body {
+  color: #D4D4D4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #dc1478dc;
+}
+ul {
+  color: rgb(35, 145, 35);
+}
+button:hover {
+  cursor: pointer;
+}
+#navButton{
+  font-size: 3rem;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 1s;
+}
+
+#navButton:hover {
+  cursor: pointer;
+  color: #dc1478dc;
+}
+/* The menu links */
+.sidenav a {
+  width: 40%;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+/* When you mouse over the navigation links, change text color */
+.sidenav a:hover {
+  cursor: hand;
+  color: #dc1478dc;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+}
+.topBar > * {
+  margin: 0 10px;
+  
+}
+.topBar a {
+  text-decoration: none;
+  color: inherit;
+}
+.topBar a:hover {
+  cursor: pointer;
+  color: #dc1478dc;
+}

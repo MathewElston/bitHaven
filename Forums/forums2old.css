@@ -1,0 +1,41 @@
+.mainContainer{
+    display:flex;
+    flex-direction: column;
+    padding: auto;
+    width: 50%;
+}
+.feedContainer {
+    padding: 2em;
+}
+.userContainer {
+    display: flex;
+    flex-direction: row;
+}
+#usernameText {
+    resize: none;
+    width: 10em;
+    height: 1em;
+    overflow: hidden;
+}
+.postBoxContainer{
+    display:flex;
+    flex-direction: column;
+    padding: 2em;
+}
+#postBox {
+    width: 100%;
+    resize:none;
+}
+#postButton{
+    align-self: flex-end;
+}
+.post {
+    border: 2px solid purple;
+    color: forestgreen;
+
+}
+.author {
+font-weight: bold;
+color: #dc1478dc;
+padding: 0.5em;
+}

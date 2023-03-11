@@ -1,0 +1,12 @@
+.accountCreation-container {
+    display: flex;
+    flex-direction: column;
+}
+#createAccountForm{
+    display: flex;
+    width: 10%;
+    flex-direction: column;
+}
+#errorLabel {
+    color:red;
+}

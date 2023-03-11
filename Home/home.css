@@ -1,0 +1,44 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container h1 {
+    text-align: center;
+    overflow: hidden;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+.cursor {
+    display:inline-block;
+    width: 3px;
+    color: white;
+    animation: blink 1s infinite;
+}
+.typedtext {
+    font-weight: normal;
+}
+.enterLink {
+    font-weight: bold;
+    color: forestgreen;
+}
+.enterLink:hover {
+    color:rebeccapurple
+}
+.cursor.typing {
+    animation: none;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
