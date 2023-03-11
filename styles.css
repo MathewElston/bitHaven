@@ -28,11 +28,8 @@ button:hover {
   font-size: 3rem;
 }
 #cookieCount {
-  position: absolute;
   color: rgb(212, 212, 212);
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%)
+  transform: translate(-60px,0)
 }
 
 /* The side navigation menu */
