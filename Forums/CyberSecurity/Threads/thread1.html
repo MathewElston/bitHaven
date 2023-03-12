@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../../../styles.css" rel="stylesheet">
-        <link href="threadStyle.css" rel="stylesheet">
+  <head>
+    <title> </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../../styles.css" rel="stylesheet" />
+    <link href="threadStyle.css" rel="stylesheet" />
 
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="../../../Home/home.html">.home()</a>
-            <a href="../../../Classwork/classwork.html" >.classwork()</a>
-            <a href="../../../Resource/resource.html">.resources()</a>
-            <a href="../../../News/news.html">.news()</a>
-            <a href="../../../Forums/forums.html">.forums()</a>
-            <a href="../../../About/about.html">.about()</a>
-            <a href="../../../Contact/contact.html">.contact()</a>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="../../../Home/home.html">.home()</a>
+      <a href="../../../Classwork/classwork.html">.classwork()</a>
+      <a href="../../../Resource/resource.html">.resources()</a>
+      <a href="../../../News/news.html">.news()</a>
+      <a href="../../../Forums/forums.html">.forums()</a>
+      <a href="../../../About/about.html">.about()</a>
+      <a href="../../../Contact/contact.html">.contact()</a>
+    </div>
+    <div class="topBar">
+      <span onclick="openNav()" id="navButton">&#9776;</span>
+      <a href="CreateAccount/account.html">Sign up</a>
+      <a href="Feedback/feedback.html">Feedback</a>
+    </div>
+  </head>
+  <body>
+    <h1 id="title"></h1>
+    <div class="mainContainer">
+      <div class="contentContainer">
+        <div class="authorBox">
+          <span id="author"></span>
+          <br />
         </div>
-        <div class="topBar">
-            <span onclick="openNav()" id="navButton">&#9776;</span>
-            <a href="CreateAccount/account.html">Sign up</a>
-            <a href="Feedback/feedback.html">Feedback</a>
-        </div>
-    </head>
-    <body>
-        <h1 id="title"></h1>
-        <div class="mainContainer">
-            <div class="contentContainer">
-                <div class="authorBox">
-                    <span id =author></span>
-                    <br>
-                </div>
-                <div class="threadContents" id="threadContents"> </div>
-            </div>
-        </div>
-        <button>Reply</button>
+        <div class="threadContents" id="threadContents"></div>
+      </div>
+    </div>
+    <button>Reply</button>
     <script src="../../../main.js"></script>
     <script src="../../../objects.js"></script>
     <script src="thread1.js"></script>
-    
-    </body>
+  </body>
 </html>

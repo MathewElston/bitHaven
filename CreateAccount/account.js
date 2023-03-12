@@ -10,27 +10,28 @@ let submitButton = document.getElementById("submitButton");
 let inputFields = document.querySelectorAll('input:not([type="button"])');
 
 function inputValidation(event) {
-    if (!usernamePattern.test(username.value)) {
-        username.setCustomValidity("Your username must be between 4 and 16 characters");
-    } else {
-        username.setCustomValidity("");
-    }
-    if (!passwordPattern.test(password.value)) {
-        password.setCustomValidity("Must contain at least one letter, one number, and one special character, and be at least 8 characters long.");
-    } else if (confirmPassword.value !== password.value ) {
-        confirmPassword.setCustomValidity("Passwords must match");
-    } else {
-        password.setCustomValidity("");
-        confirmPassword.setCustomValidity("");
-    }
-    if (!emailPattern.test(email.value)) {
-        email.setCustomValidity("Enter a valid email address");
-    } else {
-        email.setCustomValidity("");
-    }
+  if (!usernamePattern.test(username.value)) {
+    username.setCustomValidity(
+      "Your username must be between 4 and 16 characters"
+    );
+  } else {
+    username.setCustomValidity("");
+  }
+  if (!passwordPattern.test(password.value)) {
+    password.setCustomValidity(
+      "Must contain at least one letter, one number, and one special character, and be at least 8 characters long."
+    );
+  } else if (confirmPassword.value !== password.value) {
+    confirmPassword.setCustomValidity("Passwords must match");
+  } else {
+    password.setCustomValidity("");
+    confirmPassword.setCustomValidity("");
+  }
+  if (!emailPattern.test(email.value)) {
+    email.setCustomValidity("Enter a valid email address");
+  } else {
+    email.setCustomValidity("");
+  }
 }
 
-submitButton.addEventListener("click",inputValidation);
-
-
-
+submitButton.addEventListener("click", inputValidation);

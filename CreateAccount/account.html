@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles.css">
-        <link rel="stylesheet" href="account.css">
-        
-        <span onclick="openNav()" id="navButton">&#9776;</span>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="../Home/home.html">.home()</a>
-            <a href="../Classwork/classwork.html" >.classwork()</a>
-            <a href="../Resource/resource.html">.resources()</a>
-            <a href="../News/news.html">.news()</a>
-            <a href="../Forums/forums.html">.forums()</a>
-            <a href="../About/about.html">.about()</a>
-            <a href="../Contact/contact.html">.contact()</a>
-        </div>
-    </head>
-    <body>
-        <h1>Create Account</h1>
-        <div class="accountContainer">
-            <form id="form">
-                <fieldset>
-                  <legend>Account Information:</legend>
-                  <p>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" pattern = "^.{4,16}$" required>
-                  </p>
-                  <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                  </p>
-                  <p>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z\d]).{8,}"required>
-                  </p>
-                  <p>
-                    <label for="confirmPassword">Confirm Password:</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" required>
-                  </p>
-                  <p>
-                    <label for="errorLabel" id="errorLabel"></label>
-                  </p>
-                </fieldset>
-                  <input type="submit" value="Submit" id="submitButton">
-              </form>
-        </div>
+  <head>
+    <title> </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="account.css" />
+
+    <span onclick="openNav()" id="navButton">&#9776;</span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="../Home/home.html">.home()</a>
+      <a href="../Classwork/classwork.html">.classwork()</a>
+      <a href="../Resource/resource.html">.resources()</a>
+      <a href="../News/news.html">.news()</a>
+      <a href="../Forums/forums.html">.forums()</a>
+      <a href="../About/about.html">.about()</a>
+      <a href="../Contact/contact.html">.contact()</a>
+    </div>
+  </head>
+  <body>
+    <h1>Create Account</h1>
+    <div class="accountContainer">
+      <form id="form">
+        <fieldset>
+          <legend>Account Information:</legend>
+          <p>
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              pattern="^.{4,16}$"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+            />
+          </p>
+          <p>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              pattern="(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z\d]).{8,}"
+              required
+            />
+          </p>
+          <p>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              required
+            />
+          </p>
+          <p>
+            <label for="errorLabel" id="errorLabel"></label>
+          </p>
+        </fieldset>
+        <input type="submit" value="Submit" id="submitButton" />
+      </form>
+    </div>
     <script src="../main.js"></script>
     <script src="account.js"></script>
-    </body>
+  </body>
 </html>
